@@ -1,0 +1,4 @@
+@import "tailwindcss";
+
+/* Scan UI package source for Tailwind classes */
+@source "../../../packages/ui/src";
