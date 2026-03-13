@@ -1,0 +1,5 @@
+{
+  "extends": "@repo/tsconfig/node-library",
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}
