@@ -1,5 +1,9 @@
 {
-  "extends": "@repo/tsconfig/node-library",
+  "extends": "@repo/tsconfig/base",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "resolveJsonModule": true
+  },
   "include": ["src"],
   "exclude": ["node_modules", "dist"]
 }

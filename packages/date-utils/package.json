@@ -2,15 +2,30 @@
   "name": "@repo/date-utils",
   "version": "0.0.1",
   "private": true,
+  "type": "module",
   "exports": {
-    ".": "./src/index.ts",
-    "./format": "./src/format.ts",
-    "./relative": "./src/relative.ts",
-    "./parse": "./src/parse.ts"
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./format": {
+      "types": "./dist/format.d.ts",
+      "default": "./dist/format.js"
+    },
+    "./relative": {
+      "types": "./dist/relative.d.ts",
+      "default": "./dist/relative.js"
+    },
+    "./parse": {
+      "types": "./dist/parse.d.ts",
+      "default": "./dist/parse.js"
+    }
   },
   "scripts": {
+    "build": "tsc",
     "type-check": "tsc --noEmit",
-    "lint": "tsc --noEmit"
+    "lint": "tsc --noEmit",
+    "clean": "rm -rf dist"
   },
   "devDependencies": {
     "@repo/tsconfig": "workspace:*",
